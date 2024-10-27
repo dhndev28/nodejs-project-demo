@@ -8,7 +8,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 
-app.use((req, res, next) => {
+app.use('/api/checkuser', (req, res, next) => {
     return res.json({
         message: "Xin chao cac ban!"
     })
